@@ -1,0 +1,156 @@
+<ng-container *ngIf="showCertified">
+  <div class="certified-print">
+    <div class="col flex align-items-center justify-content-center general" #content id="content">
+      <div class="container">
+        <div class="background-wrapper">
+          <img class="background-image"  [src]="getImage(eventologo)" [ngStyle]="{'transform': 'scale(' + (config.fondo.scale / 100) + ')', 'opacity': config.fondo.opacity}"
+          alt="Background Image">
+          <div class="row">
+            <div class="col">
+              <div [ngStyle]="{
+                  'border-color': config.bordes.color,
+                  'border-width.px': config.bordes.width,
+                  'border-height.px': config.bordes.height,
+                  'border-style': config.bordes.style,
+                  'padding.px': config.bordes.padding}">
+                <div [ngStyle]="{
+                    'border-color': config.bordes2.color,
+                    'border-width.px': config.bordes2.width,
+                    'border-height.px': config.bordes2.height,
+                    'border-style': config.bordes2.style,
+                    'padding.px': config.bordes2.padding}">
+                  <div class="row">
+                    <div class="col text-center" *ngFor="let sponsor of SponsorData">
+                      <img [src]="getImage(sponsor.logo)" alt="firma" [style.max-width.px]="config.logos.maxWidth"
+                        [style.height.px]="config.logos.height"
+                        [ngStyle]="{'transform': 'scale(' + (config.logos.scale / 100) + ')'}">
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 10px;">
+                    <div class="col text-center content">
+                      <ng-container>
+                        <h1 [ngStyle]="{
+                            'font-size.px': config.titulo.fontSize,
+                            'font-weight': config.titulo.fontWeight,
+                            'color': config.titulo.color,
+                            'font-family': config.titulo.fontFamily,
+                            'font-style': config.titulo.fontStyle,
+                            'text-align': config.titulo.textAlign
+                          }">
+                          {{ config.titulo.titulo }}
+                        </h1>
+                        <h2 [ngStyle]="{
+                            'font-size.px': config.subtitulo.fontSize,
+                            'font-weight': config.subtitulo.fontWeight,
+                            'color': config.subtitulo.color,
+                            'font-family': config.subtitulo.fontFamily,
+                            'font-style': config.subtitulo.fontStyle,
+                            'text-align': config.subtitulo.textAlign
+                          }">
+                          {{ config.subtitulo.titulo }}
+                        </h2>
+                        <h3 [ngStyle]="{
+                            'font-size.px': config.subtitulo2.fontSize,
+                            'font-weight': config.subtitulo2.fontWeight,
+                            'color': config.subtitulo2.color,
+                            'font-family': config.subtitulo2.fontFamily,
+                            'font-style': config.subtitulo2.fontStyle,
+                            'text-align': config.subtitulo2.textAlign
+                          }">
+                          {{ config.subtitulo2.titulo}}
+                        </h3>
+                        <p [ngStyle]="{
+                            'font-size.px': config.participante.fontSize,
+                            'font-weight': config.participante.fontWeight,
+                            'color': config.participante.color,
+                            'font-family': config.participante.fontFamily,
+                            'font-style': config.participante.fontStyle,
+                            'text-align': config.participante.textAlign
+                          }">
+                          {{ selectedPerson }}
+                        </p>
+                        <h3 [ngStyle]="{
+                            'font-size.px': config.motivo.fontSize,
+                            'font-weight': config.motivo.fontWeight,
+                            'color': config.motivo.color,
+                            'font-family': config.motivo.fontFamily,
+                            'font-style': config.motivo.fontStyle,
+                            'text-align': config.motivo.textAlign
+                          }">
+                          {{ config.motivo.titulo }}
+                        </h3>
+                        <p [ngStyle]="{
+                            'font-size.px': config.evento.fontSize,
+                            'font-weight': config.evento.fontWeight,
+                            'color': config.evento.color,
+                            'font-family': config.evento.fontFamily,
+                            'font-style': config.evento.fontStyle,
+                            'text-align': config.evento.textAlign
+                          }">
+                          {{ config.evento.titulo }}
+                        </p>
+                        <h3 [ngStyle]="{
+                            'font-size.px': config.subtitulo3.fontSize,
+                            'font-weight': config.subtitulo3.fontWeight,
+                            'color': config.subtitulo3.color,
+                            'font-family': config.subtitulo3.fontFamily,
+                            'font-style': config.subtitulo3.fontStyle,
+                            'text-align': config.subtitulo3.textAlign
+                          }">
+                          {{ config.subtitulo3.titulo }}
+                        </h3>
+                        <p [ngStyle]="{
+                            'font-size.px': config.fecha.fontSize,
+                            'font-weight': config.fecha.fontWeight,
+                            'color': config.fecha.color,
+                            'font-family': config.fecha.fontFamily,
+                            'font-style': config.fecha.fontStyle,
+                            'text-align': config.fecha.textAlign
+                          }">
+                          {{ Fecha | date:'dd/MM/yyyy' }}
+                        </p>
+                      </ng-container>
+
+                    </div>
+                  </div>
+                  <div class="row d-flex flex-nowrap align-items-end">
+                    <div class="col text-center" *ngFor="let signature of SignatureData">
+                      <img [src]="getImage(signature.firma)" alt="Firma 1" class="img-fluid"
+                        [style.max-width.px]="config.firmas.maxWidth" [style.height.px]="config.firmas.height"
+                        [ngStyle]="{'transform': 'scale(' + (config.firmas.scale / 100) + ')'}">
+                      <p [ngStyle]="{
+                          'font-size.px': config.nombre.fontSize,
+                          'font-weight': config.nombre.fontWeight,
+                          'color': config.nombre.color,
+                          'font-family': config.nombre.fontFamily,
+                          'font-style': config.nombre.fontStyle,
+                          'text-align': config.nombre.textAlign
+                          ,'margin-bottom.px': -10}">
+                        {{ signature.nombre }}
+                      </p>
+                      <small [ngStyle]="{
+                          'font-size.px': config.direccion.fontSize,
+                          'font-weight': config.direccion.fontWeight,
+                          'color': config.direccion.color,
+                          'font-family': config.direccion.fontFamily,
+                          'font-style': config.direccion.fontStyle,
+                          'text-align': config.direccion.textAlign,
+                          'margin-top.px': -10, 'margin-bottom.px': -10}">
+                        {{ signature.direccion }}
+                      </small>
+                    </div>
+                  </div>
+                  <img [src]="qrCodeDataUrl" class="qr-container"[ngStyle]="{
+                    'top.px': config.qr.top,
+                    'left.px': config.qr.left,
+                    'opacity': config.qr.opacity}">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ng-container>

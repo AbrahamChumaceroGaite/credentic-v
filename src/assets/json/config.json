@@ -1,0 +1,123 @@
+{
+  "titulo": {
+    "titulo": "Certificado",
+    "fontSize": 30,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "subtitulo": {
+    "titulo": "de Excelencia",
+    "fontSize": 12,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "subtitulo2": {
+    "titulo": "Este Certificado se Otorga a: ",
+    "fontSize": 20,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "subtitulo3": {
+    "titulo": "El Dia",
+    "fontSize": 12,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "motivo": {
+    "titulo": "Por haber cumplido Satisfactoriamente",
+    "fontSize": 14,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "participante": {
+    "titulo": "Nombre del Participante",
+    "fontSize": 16,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "evento": {
+    "titulo": "(Seleccione el Evento)",
+    "fontSize": 14,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "fecha": {
+    "fontSize": 14,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "nombre": {
+    "fontSize": 12,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "direccion": {
+    "fontSize": 8,
+    "fontWeight": "normal",
+    "color": "#000000",
+    "fontFamily": "Arial, sans-serif",
+    "fontStyle": "normal",
+    "textAlign": "Center"
+  },
+  "logos": {
+    "maxWidth": 50,
+    "height": 50
+  },
+  "firmas": {
+    "margin-left": 20,
+    "margin-button": 20,
+    "maxWidth": 100,
+    "height": 70
+  },
+  "fondo": {
+    "width": 40,
+    "height": 40,
+    "top": 100,
+    "left": 200,
+    "opacity": 0.3
+  },
+  "bordes": {
+    "color": "#0000FF",
+    "width": 2,
+    "style": "solid",
+    "padding": 10
+  },
+  "bordes2": {
+    "color": "#FFFF00",
+    "width": 2,
+    "style": "solid",
+    "padding": 10
+  },
+  "lienzo": {
+    "width": 700,
+    "height": 500,
+    "orientation": "horizontal"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "font": [
+    {
+      "label": "Arial",
+      "value": "Arial"
+    },
+    {
+      "label": "Verdana",
+      "value": "Verdana"
+    },
+    {
+      "label": "Helvetica",
+      "value": "Helvetica"
+    },
+    {
+      "label": "Tahoma",
+      "value": "Tahoma"
+    },
+    {
+      "label": "Trebuchet MS",
+      "value": "Trebuchet MS"
+    },
+    {
+      "label": "Georgia",
+      "value": "Georgia"
+    },
+    {
+      "label": "Times New Roman",
+      "value": "Times New Roman"
+    },
+    {
+      "label": "Courier New",
+      "value": "Courier New"
+    },
+    {
+      "label": "Courier",
+      "value": "Courier"
+    },
+    {
+      "label": "Palatino",
+      "value": "Palatino"
+    },
+    {
+      "label": "Garamond",
+      "value": "Garamond"
+    },
+    {
+      "label": "Book Antiqua",
+      "value": "Book Antiqua"
+    },
+    {
+      "label": "Arial Black",
+      "value": "Arial Black"
+    },
+    {
+      "label": "Impact",
+      "value": "Impact"
+    },
+    {
+      "label": "Lucida Sans Unicode",
+      "value": "Lucida Sans Unicode"
+    },
+    {
+      "label": "Lucida Grande",
+      "value": "Lucida Grande"
+    },
+    {
+      "label": "Verdana Pro",
+      "value": "Verdana Pro"
+    },
+    {
+      "label": "Roboto",
+      "value": "Roboto"
+    },
+    {
+      "label": "Open Sans",
+      "value": "Open Sans"
+    },
+    {
+      "label": "Arial Narrow",
+      "value": "Arial Narrow"
+    },
+    {
+      "label": "Arial Rounded MT",
+      "value": "Arial Rounded MT"
+    },
+    {
+      "label": "Century Gothic",
+      "value": "Century Gothic"
+    },
+    {
+      "label": "Copperplate Gothic",
+      "value": "Copperplate Gothic"
+    },
+    {
+      "label": "Franklin Gothic Medium",
+      "value": "Franklin Gothic Medium"
+    },
+    {
+      "label": "Myriad Pro",
+      "value": "Myriad Pro"
+    },
+    {
+      "label": "Optima",
+      "value": "Optima"
+    },
+    {
+      "label": "Segoe UI",
+      "value": "Segoe UI"
+    },
+    {
+      "label": "Calibri",
+      "value": "Calibri"
+    },
+    {
+      "label": "Candara",
+      "value": "Candara"
+    },
+    {
+      "label": "Arial Unicode MS",
+      "value": "Arial Unicode MS"
+    },
+    {
+      "label": "Microsoft Sans Serif",
+      "value": "Microsoft Sans Serif"
+    },
+    {
+      "label": "Verdana Ref",
+      "value": "Verdana Ref"
+    },
+    {
+      "label": "Rockwell",
+      "value": "Rockwell"
+    },
+    {
+      "label": "Rockwell Extra Bold",
+      "value": "Rockwell Extra Bold"
+    },
+    {
+      "label": "Consolas",
+      "value": "Consolas"
+    },
+    {
+      "label": "Andale Mono",
+      "value": "Andale Mono"
+    },
+    {
+      "label": "Brush Script MT",
+      "value": "Brush Script MT"
+    },
+    {
+      "label": "Comic Sans MS",
+      "value": "Comic Sans MS"
+    },
+    {
+      "label": "Vivaldi",
+      "value": "Vivaldi"
+    },
+    {
+      "label": "Segoe Script",
+      "value": "Segoe Script"
+    },
+    {
+      "label": "Lucida Handwriting",
+      "value": "Lucida Handwriting"
+    },
+    {
+      "label": "Kristen ITC",
+      "value": "Kristen ITC"
+    },
+    {
+      "label": "French Script MT",
+      "value": "French Script MT"
+    },
+    {
+      "label": "Edwardian Script ITC",
+      "value": "Edwardian Script ITC"
+    },
+    {
+      "label": "Monotype Corsiva",
+      "value": "Monotype Corsiva"
+    }
+  ],
+  "fontWeight": [
+    {
+      "label": "Normal",
+      "value": "normal"
+    },
+    {
+      "label": "Bold",
+      "value": "bold"
+    },
+    {
+      "label": "Bolder",
+      "value": "bolder"
+    },
+    {
+      "label": "Lighter",
+      "value": "lighter"
+    },
+    {
+      "label": "100",
+      "value": "100"
+    },
+    {
+      "label": "200",
+      "value": "200"
+    },
+    {
+      "label": "300",
+      "value": "300"
+    },
+    {
+      "label": "400",
+      "value": "400"
+    },
+    {
+      "label": "500",
+      "value": "500"
+    },
+    {
+      "label": "600",
+      "value": "600"
+    },
+    {
+      "label": "700",
+      "value": "700"
+    },
+    {
+      "label": "800",
+      "value": "800"
+    },
+    {
+      "label": "900",
+      "value": "900"
+    }
+  ],
+  "fontStyle": [
+    {
+      "label": "Normal",
+      "value": "normal"
+    },
+    {
+      "label": "Italic",
+      "value": "italic"
+    },
+    {
+      "label": "Oblique",
+      "value": "oblique"
+    }
+  ],
+  "textAlign": [
+    {
+      "label": "Left",
+      "value": "left"
+    },
+    {
+      "label": "Center",
+      "value": "center"
+    },
+    {
+      "label": "Right",
+      "value": "right"
+    },
+    {
+      "label": "Justify",
+      "value": "justify"
+    }
+  ],
+  "textShadow": [
+    {
+      "label": "None",
+      "value": "none"
+    },
+    {
+      "label": "1px 1px 1px #000000",
+      "value": "1px 1px 1px #000000"
+    },
+    {
+      "label": "2px 2px 2px #000000",
+      "value": "2px 2px 2px #000000"
+    },
+    {
+      "label": "3px 3px 3px #000000",
+      "value": "3px 3px 3px #000000"
+    }
+  ],
+  "letterSpacing": [
+    { "label": "Normal", "value": "normal" },
+    { "label": "1px", "value": "1px" },
+    { "label": "2px", "value": "2px" },
+    { "label": "3px", "value": "3px" }
+  ],
+  "wordSpacing": [
+    { "label": "Normal", "value": "normal" },
+    { "label": "1px", "value": "1px" },
+    { "label": "2px", "value": "2px" },
+    { "label": "3px", "value": "3px" }
+  ],
+  "borders": [
+    { "label": "Sin borde", "value": "none" },
+    { "label": "Borde sólido", "value": "solid" },
+    { "label": "Borde punteado", "value": "dotted" },
+    { "label": "Borde con doble línea", "value": "double" },
+    { "label": "Borde con línea en relieve", "value": "groove" },
+    { "label": "Borde con línea en relieve invertido", "value": "ridge" },
+    { "label": "Borde con línea en relieve combinado", "value": "inset" },
+    { "label": "Borde con línea en relieve combinado invertido", "value": "outset" }
+  ]
+}
