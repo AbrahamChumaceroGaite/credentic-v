@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NebularLibraryModule } from './modules/nebular-library/nebular-library.module';
 import { PrimengLibraryModule } from './modules/primeng-library/primeng-library.module';
@@ -17,10 +17,13 @@ import {
   NgxUiLoaderHttpModule
 } from 'ngx-ui-loader';
 import { ViewportComponent } from './components/viewport/viewport.component';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
 
+registerLocaleData(localeEs);
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   "bgsColor": "skyblue",
-  "bgsOpacity": 0.5,
+  "bgsOpacity": 0,
   "bgsPosition": "bottom-right",
   "bgsSize": 60,
   "bgsType": "three-strings",
@@ -37,7 +40,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   "logoUrl": "",
   "masterLoaderId": "master",
   "overlayBorderRadius": "0",
-  "overlayColor": "rgba(40, 40, 40, 0.8)",
+  "overlayColor": "rgba(0, 0, 0, 1)",
   "pbColor": "skyblue",
   "pbDirection": "ltr",
   "pbThickness": 3,
@@ -64,7 +67,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     PrimengLibraryModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig)
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

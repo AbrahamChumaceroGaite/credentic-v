@@ -46,6 +46,19 @@
 
 }
 
+.divider-content{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .divider {
+    align-items: center;
+    border-bottom: 1px solid #3c3e3ebb; /* Puedes ajustar el grosor y el color */
+    margin: 7px 0;
+    width: 40%; /* Añade margen para separar el contenido */
+  }
+}
+
 .certified-print {
   justify-content: center;
   align-items: start;

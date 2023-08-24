@@ -35,7 +35,9 @@
                             'color': config.titulo.color,
                             'font-family': config.titulo.fontFamily,
                             'font-style': config.titulo.fontStyle,
-                            'text-align': config.titulo.textAlign
+                            'text-align': config.titulo.textAlign,
+                            'background-color': config.titulo.colorbg,
+                            'border-radius.px': config.titulo.borderr
                           }">
                           {{ config.titulo.titulo }}
                         </h1>
@@ -107,7 +109,7 @@
                             'font-style': config.fecha.fontStyle,
                             'text-align': config.fecha.textAlign
                           }">
-                          {{ Fecha | date:'dd/MM/yyyy' }}
+                          {{ Fecha | date:'fullDate' }}
                         </p>
                       </ng-container>
 
@@ -118,7 +120,11 @@
                       <img [src]="getImage(signature.firma)" alt="Firma 1" class="img-fluid"
                         [style.max-width.px]="config.firmas.maxWidth" [style.height.px]="config.firmas.height"
                         [ngStyle]="{'transform': 'scale(' + (config.firmas.scale / 100) + ')'}">
-                      <p [ngStyle]="{
+                        <div class="divider-content">
+                          <div class="divider"></div>
+                        </div>
+                      
+                        <p [ngStyle]="{
                           'font-size.px': config.nombre.fontSize,
                           'font-weight': config.nombre.fontWeight,
                           'color': config.nombre.color,
