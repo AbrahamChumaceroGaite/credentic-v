@@ -24,9 +24,9 @@
                     'border-height.px': config.bordes2.height,
                     'border-style': config.bordes2.style,
                     'padding.px': config.bordes2.padding}">
-                  <div class="row">
+                  <div class="row" style="margin-top: 10px;">
                     <div class="col text-center" *ngFor="let sponsor of SponsorData">
-                      <img [src]="getImage(sponsor.logo)" alt="firma" [style.max-width.px]="config.logos.maxWidth"
+                      <img [src]="getImage(sponsor.logo)" alt="auspiciadores" [style.max-width.px]="config.logos.maxWidth"
                         [style.height.px]="config.logos.height"
                         [ngStyle]="{'transform': 'scale(' + (config.logos.scale / 100) + ')'}">
                     </div>
@@ -127,7 +127,7 @@
                   </div>
                   <div class="row d-flex flex-nowrap align-items-end">
                     <div class="col text-center" *ngFor="let signature of SignatureData">
-                      <img [src]="getImage(signature.firma)" alt="Firma 1" class="img-fluid"
+                      <img [src]="getImage(signature.firma)" alt="Firmas" class="img-fluid"
                         [style.max-width.px]="config.firmas.maxWidth" [style.height.px]="config.firmas.height"
                         [ngStyle]="{'transform': 'scale(' + (config.firmas.scale / 100) + ')'}">
                         <div class="divider-content">

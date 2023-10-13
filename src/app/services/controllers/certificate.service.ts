@@ -25,4 +25,9 @@ export class CertificateService {
     return this.httpClient.put(this.apiUrl + '/qr/' + id, body);
   }
 
+
+  isDownload(id: any, body:any) {
+    return this.httpClient.put(this.apiUrl + '/download/' + id, body);
+  }
+
 }

@@ -54,7 +54,7 @@ export class PreviewComponent {
         })
       }
       else {
-     
+
       }
 
       if (this.id === 'sin_certificado') {
@@ -111,7 +111,9 @@ export class PreviewComponent {
   }
 
   generatePDF() {
-    this.router.navigateByUrl('certificado/pdf/' + this.id)
+    this.router.navigateByUrl('certificado/pdf/' + this.id);
+    this.certificateService.isDownload(this.id, '').subscribe((res: any) => {
+    })
   }
 
 }
