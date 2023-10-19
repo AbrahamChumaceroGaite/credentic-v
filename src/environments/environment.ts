@@ -2,10 +2,10 @@ export const environment = {
   production: false,
   api: 'https://cert-api.tja.ucb.edu.bo/credentic/api',
   apimg: 'https://cert-api.tja.ucb.edu.bo/',
-  apic: 'https://credentic-view.dev.404.codes/certificado/codigo/',
-  apiurl: 'https://credentic-view.dev.404.codes/certificado/chk/codigo/',
-  apiqr: 'https://credentic-view.dev.404.codes/certificado/qr/codigo/',
-  apid: 'https://credentic-api.dev.404.codes/certificado/download/codigo/'
+  apic: 'https://cert-api.tja.ucb.edu.bo/certificado/codigo/',
+  apiurl: 'https://cert.tja.ucb.edu.bo/certificado/chk/codigo/',
+  apiqr: 'https://cert.tja.ucb.edu.bo/certificado/qr/codigo/',
+  apid: 'https://cert-api.tja.ucb.edu.bo/certificado/download/codigo/'
   
     //API DEVEPLONMENT	
 /*     api: 'https://credentic-api.dev.404.codes/credentic/api',
