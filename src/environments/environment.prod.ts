@@ -5,7 +5,6 @@ export const environment = {
   apic: 'https://cert.tja.ucb.edu.bo/certificado/codigo/',
   apiurl: 'https://cert.tja.ucb.edu.bo/certificado/chk/codigo/',
   apiqr: 'https://cert.tja.ucb.edu.bo/certificado/qr/codigo/',
-  apid: 'https://cert.tja.ucb.edu.bo/certificado/download/codigo/'
 
   //API DEVEPLONMENT	
   /*   api: 'https://credentic-api.dev.404.codes/credentic/api',

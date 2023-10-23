@@ -19,6 +19,7 @@ export class PreviewComponent {
   PersonData!: any[];
   SponsorData!: any[];
   SignatureData!: any[];
+  selectedEvent: any;
   selectedPerson: any;
   config: any;
   Fecha: Date = new Date();
@@ -75,6 +76,7 @@ export class PreviewComponent {
       this.idevento = this.MassiveData.plantilla.id;
       this.eventologo = this.MassiveData.evento.logo;
       this.Fecha = this.MassiveData.evento.fecha;
+      this.selectedEvent = this.MassiveData.evento.nombre
       this.PersonData = this.MassiveData.personas;
       this.selectedPerson = this.MassiveData.persona.nombre;
       this.config = JSON.parse(this.MassiveData.plantilla.config);
@@ -113,6 +115,8 @@ export class PreviewComponent {
   generatePDF() {
     this.router.navigateByUrl('certificado/pdf/' + this.id);
     this.certificateService.isDownload(this.id, '').subscribe((res: any) => {
+    }, (error)=>{
+      console.log(error)
     })
   }
 

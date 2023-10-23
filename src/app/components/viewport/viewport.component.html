@@ -21,8 +21,7 @@
                     'padding.px': config.bordes2.padding}">
                   <div class="row" style="margin-top: 10px;">
                     <div class="col text-center" *ngFor="let sponsor of SponsorData">
-                      <img [src]="getImage(sponsor.logo)" alt="firma" [style.max-width.px]="config.logos.maxWidth"
-                        [style.height.px]="config.logos.height"
+                      <img [src]="getImage(sponsor.logo)" alt="firma" [style.height.px]="config.logos.height"
                         [ngStyle]="{'transform': 'scale(' + (config.logos.scale / 100) + ')'}">
                     </div>
                   </div>
@@ -92,7 +91,7 @@
                             'font-style': config.evento.fontStyle,
                             'text-align': config.evento.textAlign
                           }">
-                          {{ config.evento.titulo }}
+                          {{ selectedEvent }}
                         </p>
                         <h3 [ngStyle]="{
                             'font-size.px': config.subtitulo3.fontSize,
