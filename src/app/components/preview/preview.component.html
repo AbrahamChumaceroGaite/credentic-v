@@ -1,7 +1,10 @@
 <ng-container>
   <p-divider align="right">
-    <p-button label="Descargar" icon="pi pi-file-pdf" (click)="generatePDF()"
+    <ng-container *ngIf="!showDownload">
+      <p-button label="Descargar" icon="pi pi-file-pdf" (click)="generatePDF()"
       styleClass="p-button-outlined p-button-danger"></p-button>
+    </ng-container>   
+ 
   </p-divider>
   <div class="certified" #content id="content">
     <div class="col flex align-items-center justify-content-center general" >

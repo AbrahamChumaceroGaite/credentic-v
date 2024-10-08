@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment';
 export class PreviewComponent {
   @ViewChild('content') content!: ElementRef;
   id!: string | null;
+  showDownload!: boolean;
   EventData!: any[];
   idevento: any;
   MassiveData!: any;
@@ -46,18 +47,19 @@ export class PreviewComponent {
     this.route.params.subscribe(params => {
       this.id = params['id'];
       if (this.route.snapshot.url[1].path === 'chk') {
+        this.showDownload = false;
         this.certificateService.isDelivery(this.id, '').subscribe((res: any) => {
         }, (err) => {
         })
       } else if (this.route.snapshot.url[1].path === 'qr') {
+        this.showDownload = false;
         this.certificateService.isCheck(this.id, '').subscribe((res: any) => {
         }, (err) => {
         })
       }
-      else {
-
+      else if (this.route.snapshot.url[1].path === 'codigo') {
+        this.showDownload = true;
       }
-
       if (this.id === 'sin_certificado') {
         this.router.navigate(['certificado/404']);
       } else {
@@ -115,7 +117,7 @@ export class PreviewComponent {
   generatePDF() {
     this.router.navigateByUrl('certificado/pdf/' + this.id);
     this.certificateService.isDownload(this.id, '').subscribe((res: any) => {
-    }, (error)=>{
+    }, (error) => {
       console.log(error)
     })
   }
